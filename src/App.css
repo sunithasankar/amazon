@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", system-ui;
+  }
+ .nav-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+ }
+ .logo img{
+  width: 150px;
+  height: 50px;
+  margin: 10px 20px;
+ }
+ .search input{
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px 0 0 10px;
+ }
+ .search .btn{
+  width: 40px;
+  height: 40px;
+  background-color: #ffaf37;
+  border: 1px solid lightgray;
+  border-radius: 0 10px 10px 0;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+ }
+ .user-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+  cursor: pointer;
+ }
+ .user{
+  padding: 15px;
+ }
+ .product-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  }
+  .product-section a{
+    color:  rgb(255, 94, 0);
+    text-decoration: none;
+   }
+ .imgBox{
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(175, 175, 175);
+  text-align: center;
+  color: rgb(255, 94, 0);
+
+ }
+ .proImg{
+  width: 250px;
+  height:250px;
+  transition: transform .2s;
+ }
+ .proImg:hover{
+   transform: scale(1.2);
+ }
+ .subMenu{
+  background-color: rgb(94, 94, 94);
+  color: white;
+  height: 40px;  
+ }
+ .subMenu ul{
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+ .subMenu ul li{
+  list-style: none;
+  padding: 10px;
+  margin: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+ }
+ .subMenu a{
+  color: white;
+  text-decoration: none;
+ }
+ .subMenu  a:hover {
+  color: #ffaf37;
+}
+.pageSection{
+  display:grid;
+  grid-template-columns: repeat(4,300px);
+  gap:50px;
+  font-weight: bold;
+  
+}
+.pageImg{
+  width: 250px;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid rgb(123, 123, 123);
+  border-radius: 10px;
+}
+.pageImg img{
+  width: 100%;
+  background-size: cover ;
+}
+.pageModel{
+  text-align: center;
+}
+.singleDetails{
+  width:50%;
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.itemdetails{
+  margin: 30px;
+}
+.itemdetails .btn{
+  width: 150px;
+  margin:  20px 10px 20px 0;
+  padding: 10px;
+  background-color: #ffaf37;
+  border-radius: 30px;
+  border: none;
+}
