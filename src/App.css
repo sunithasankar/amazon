@@ -124,6 +124,10 @@
   border: 2px solid grey;
   border-radius: 10px;
 }
+.singleImg img{
+  width:300px;
+  height: 300px;
+}
 .itemdetails{
   margin: 30px;
 }

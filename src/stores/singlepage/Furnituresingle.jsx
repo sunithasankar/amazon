@@ -1,20 +1,20 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import {booksData} from '../data/books'
+import {furnitureData} from '../data/furniture'
 import Navbar from '../components/Navbar'
 
-function Booksingle() {
+function Furnituresingle() {
     const {id} = useParams();
-    const product = booksData.find ((item)=>item.id===id)
+    const product = furnitureData.find ((item)=>item.id===id)
      return (
         <>
         <Navbar/>
     <div className='singleDetails'>
       <div className='singleImg'>
-        <img src={product.image} alt="BookPic"/>
+        <img src={product.image} alt="FurniturePic"/>
       </div>
       <div className='itemdetails'>
-        <h3>{product.title}</h3>
+        <h3>{product.model}</h3>
         <h2>{product.price}</h2>
         <p>{product.description}</p>
         <button className='btn'>Add to Cart</button>
@@ -26,4 +26,4 @@ function Booksingle() {
 }
 
 
-export default Booksingle
+export default Furnituresingle

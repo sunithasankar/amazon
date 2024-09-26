@@ -1,17 +1,17 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import {mobileData} from '../data/mobiles'
+import {kitchenData} from '../data/kitchen'
 import Navbar from '../components/Navbar'
 
-function Mobilessingle() {
+function Kitchensingle() {
     const {id} = useParams();
-    const product = mobileData.find ((item)=>item.id===id)
+    const product = kitchenData.find ((item)=>item.id===id)
      return (
         <>
         <Navbar/>
     <div className='singleDetails'>
       <div className='singleImg'>
-        <img src={product.image} alt="MobilePic"/>
+        <img src={product.image} alt="KitchenPic"/>
       </div>
       <div className='itemdetails'>
         <h3>{product.model}</h3>
@@ -26,4 +26,4 @@ function Mobilessingle() {
 }
 
 
-export default Mobilessingle
+export default Kitchensingle

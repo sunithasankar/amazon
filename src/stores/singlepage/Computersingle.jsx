@@ -1,17 +1,17 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import {mobileData} from '../data/mobiles'
-import Navbar from '../components/Navbar'
+import Navabar from '../components/Navbar'
+import { computerData } from '../data/computers'
 
-function Mobilessingle() {
-    const {id} = useParams();
-    const product = mobileData.find ((item)=>item.id===id)
-     return (
-        <>
-        <Navbar/>
+function Computersingle() {
+  const {id} =useParams()
+  const product= computerData.find((item)=>item.id===id)
+  return (
+    <>
+    <Navabar/>
     <div className='singleDetails'>
       <div className='singleImg'>
-        <img src={product.image} alt="MobilePic"/>
+      <img src={product.image} alt="ComputerPic"/>
       </div>
       <div className='itemdetails'>
         <h3>{product.model}</h3>
@@ -21,9 +21,8 @@ function Mobilessingle() {
         <button className='btn'>Buy Now</button>
       </div>      
     </div>
-    </>
+     </>
   )
 }
 
-
-export default Mobilessingle
+export default Computersingle
